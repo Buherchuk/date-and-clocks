@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-18</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="current-date-time">
+            <div class="current-date">
+                <span class="date"></span>
+            </div>
+            <div class="current-time">
+                <span class="time large-text"></span>
+            </div>
+        </div>
+        <div class="stopwatch">
+            <div class="stopwatch-seconds">
+                <span class="seconds-description large-text">0:00:00:00</span>
+                <div class="stopwatch-buttons">
+                    <button class="start" onclick="startInterval()">Start</button>
+                    <button class="loop" onclick="createTimeList()">Loop</button>
+                    <button class="pause" onclick="stopInterval()">Pause</button>
+                    <button class="reset" onclick="resetTimeList()">Reset</button>
+                </div>                
+            </div>
+            <div class="stopwatch-result">
+                <div class="result-loop">
+                </div>            
+            </div>    
+        </div>
+        <div class="reverce-countdown">
+            <div class="set-minutes">
+                <div class="countdown-elements">
+                    <span class="minutes large-text">00</span>
+                    <span>MINUTES</span>
+                    <div class="increase-decrease-buttons">
+                        <button class="increase" onclick="increaseMinute()">+</button>
+                        <button class="decrease" onclick="decreaseMinutes()">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="countdown-minutes">
+                <div class="countdown-minutes-wrapper">
+                    <span class="counter-minutes large-text">00 :</span>
+                    <span class="counter-seconds large-text">00</span>
+                </div>
+                <div class="start-stop-reset-buttons">
+                    <button class="Start" onclick="clock()">Start</button>
+                    <button class="Stop" onclick="clockPause()">Stop</button>
+                    <button class="Reset" onclick="clockReset()">Reset</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
